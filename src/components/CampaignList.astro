@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import { url } from '../lib/site';
+import Arrow from './Arrow.astro';
+const { status = 'current', limit, photos = false } = Astro.props;
+const all = (await getCollection('campaigns', ({data}) => data.published && data.status === status)).sort((a,b) => a.data.order - b.data.order);
+const campaigns = limit ? all.slice(0, limit) : all;
+---
+<div class:list={['campaign-list', {'campaign-photos': photos}]}>
+  {campaigns.map(c => <article class="campaign-item">
+    {photos && c.data.image && <a class="campaign-image m-zoom" href={url(`/campaigns/${c.id}/`)} tabindex="-1" aria-hidden="true"><img src={url(c.data.image)} alt="" width="960" height="650" loading="lazy" decoding="async" /></a>}
+    <div class="campaign-info"><p class="date-label">{c.data.period}{status === 'past' ? ' · Past campaign' : ''}{photos && c.id==='daylighting' ? ' · Design concept pictured' : ''}{photos && c.id==='safer-st-claude' ? ' · Bikeway example pictured' : ''}</p><h3><a href={url(`/campaigns/${c.id}/`)}>{c.data.title}<Arrow /></a></h3><p>{c.data.description}</p></div>
+  </article>)}
+</div>

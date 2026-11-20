@@ -1,0 +1,10 @@
+{
+  "title": "Bus Rapid Transit",
+  "description": "Follow RTA’s planning for a rapid transit connection between New Orleans East, downtown and the West Bank.",
+  "location": "New Orleans East / downtown / West Bank",
+  "agency": "New Orleans RTA",
+  "url": "https://www.norta.com/current-projects/bus-rapid-transit",
+  "order": 1.5,
+  "published": true,
+  "status": "See agency updates"
+}

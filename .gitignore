@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+.taste-skill/chrome*/
+.taste-skill/gate/
+.taste-skill/shots/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/config.local.json
+.gemini/
+*.zip
+tmp/

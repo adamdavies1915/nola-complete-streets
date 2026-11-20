@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import Arrow from './Arrow.astro';
+const { category } = Astro.props;
+const entries = (await getCollection('resources', ({data}) => data.published && data.category === category)).sort((a,b)=>a.data.order-b.data.order);
+---
+<div class="resource-list">{entries.map(({data})=><article class="resource-row"><div><h2><a href={data.url}>{data.title}<Arrow external /></a></h2><p>{data.description}</p></div><p class="resource-meta">{data.publisher}{data.dateLabel && <><br />{data.dateLabel}</>}</p></article>)}</div>

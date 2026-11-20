@@ -1,0 +1,512 @@
+# Pages CMS — browser editing for the static Astro site.
+# Public uploads only; do not upload internal minutes or contact lists.
+media:
+  - name: images
+    label: Photographs & logos
+    input: public/images
+    output: /images
+    extensions:
+      - webp
+      - jpg
+      - jpeg
+      - png
+    rename: safe
+  - name: documents
+    label: Public documents
+    input: public/downloads
+    output: /downloads
+    extensions:
+      - pdf
+    rename: safe
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: src/data/home.json
+    format: json
+    fields:
+      - name: title
+        label: Main headline
+        type: string
+        required: true
+      - name: intro
+        label: Introduction
+        type: text
+        required: true
+      - name: heroImage
+        label: Main photograph
+        type: image
+        required: true
+      - name: heroAlt
+        label: Main photograph description
+        type: text
+        required: true
+      - name: definitionTitle
+        label: Complete streets heading
+        type: string
+        required: true
+      - name: definition
+        label: Complete streets introduction
+        type: text
+        required: true
+      - name: policyTitle
+        label: Policy heading
+        type: string
+        required: true
+      - name: policyIntro
+        label: Policy introduction
+        type: text
+        required: true
+      - name: invitationTitle
+        label: Invitation heading
+        type: string
+        required: true
+      - name: invitation
+        label: Invitation text
+        type: text
+        required: true
+  - name: pages
+    label: Website pages
+    type: collection
+    path: src/content/pages
+    format: yaml-frontmatter
+    filename: '{primary}.md'
+    view:
+      primary: title
+      fields:
+        - title
+        - published
+      sort: order
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+        required: true
+      - name: published
+        label: Publish on the website
+        type: boolean
+        default: false
+      - name: order
+        label: Display order
+        type: number
+        default: 0
+      - name: view
+        label: Page layout
+        type: select
+        options:
+          values:
+            - article
+            - hub
+            - members
+            - involved
+            - certification
+            - routes
+            - projects
+            - research
+            - plans
+            - campaigns
+            - current
+            - past
+            - storymap
+        required: true
+      - name: parent
+        label: Parent page path
+        type: string
+      - name: parentLabel
+        label: Parent page label
+        type: string
+      - name: updated
+        label: Last content update (YYYY-MM-DD)
+        type: string
+      - name: image
+        label: Photograph
+        type: image
+      - name: imageAlt
+        label: Describe the photograph for people who cannot see it
+        type: text
+      - name: links
+        label: Directory links
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+            required: true
+          - name: href
+            label: Link path or URL
+            type: string
+            required: true
+      - name: sources
+        label: Sources & further reading
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Source name
+            type: string
+            required: true
+          - name: url
+            label: Source URL
+            type: string
+            required: true
+      - name: body
+        label: Page text
+        type: rich-text
+    subfolders: true
+    operations:
+      create: false
+      delete: false
+      rename: false
+  - name: campaigns
+    label: Campaigns
+    type: collection
+    path: src/content/campaigns
+    format: yaml-frontmatter
+    filename: '{primary}.md'
+    view:
+      primary: title
+      fields:
+        - title
+        - published
+      sort: order
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+        required: true
+      - name: published
+        label: Publish on the website
+        type: boolean
+        default: false
+      - name: order
+        label: Display order
+        type: number
+        default: 0
+      - name: status
+        label: Campaign status
+        type: select
+        options:
+          values:
+            - current
+            - past
+        required: true
+      - name: period
+        label: Campaign period (for example, 2025–2026)
+        type: string
+        required: true
+      - name: updated
+        label: Last update (YYYY-MM-DD)
+        type: string
+      - name: image
+        label: Photograph
+        type: image
+      - name: imageAlt
+        label: Describe the photograph for people who cannot see it
+        type: text
+      - name: sources
+        label: Sources & further reading
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Source name
+            type: string
+            required: true
+          - name: url
+            label: Source URL
+            type: string
+            required: true
+      - name: body
+        label: Page text
+        type: rich-text
+    subfolders: false
+  - name: events
+    label: Meetings & events
+    type: collection
+    path: src/content/events
+    format: json
+    filename: '{primary}.json'
+    view:
+      primary: title
+      fields:
+        - title
+        - start
+        - status
+        - published
+      sort: start
+      order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+        required: true
+      - name: published
+        label: Publish on the website
+        type: boolean
+        default: false
+      - name: order
+        label: Display order
+        type: number
+        default: 0
+      - name: start
+        label: Starts at
+        type: string
+        required: true
+        description: >-
+          ISO date and time with offset. Winter: 2027-01-20T15:00:00-06:00. Summer uses -05:00 for Central
+          daylight time.
+      - name: end
+        label: Ends at
+        type: string
+        required: true
+        description: Use the same date format and time zone as the start.
+      - name: status
+        label: Status
+        type: select
+        options:
+          values:
+            - scheduled
+            - cancelled
+        required: true
+      - name: location
+        label: Venue
+        type: string
+        required: true
+      - name: address
+        label: Street address
+        type: string
+        required: true
+  - name: resources
+    label: Plans, research & data
+    type: collection
+    path: src/content/resources
+    format: json
+    filename: '{primary}.json'
+    view:
+      primary: title
+      fields:
+        - title
+        - published
+      sort: order
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+        required: true
+      - name: published
+        label: Publish on the website
+        type: boolean
+        default: false
+      - name: order
+        label: Display order
+        type: number
+        default: 0
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - plan
+            - research
+        required: true
+      - name: url
+        label: Official source URL
+        type: string
+        required: true
+      - name: publisher
+        label: Publisher
+        type: string
+        required: true
+      - name: dateLabel
+        label: Date or reporting period
+        type: string
+  - name: projects
+    label: City project directory
+    type: collection
+    path: src/content/projects
+    format: json
+    filename: '{primary}.json'
+    view:
+      primary: title
+      fields:
+        - title
+        - published
+      sort: order
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+        required: true
+      - name: published
+        label: Publish on the website
+        type: boolean
+        default: false
+      - name: order
+        label: Display order
+        type: number
+        default: 0
+      - name: url
+        label: Official project URL
+        type: string
+        required: true
+      - name: agency
+        label: Responsible agency
+        type: string
+        required: true
+      - name: location
+        label: Neighborhood or area
+        type: string
+        required: true
+      - name: status
+        label: Status note
+        type: string
+        required: true
+        description: Use See agency updates unless a dated official source supports a more specific stage.
+  - name: members
+    label: Members & executive committee
+    type: collection
+    path: src/content/members
+    format: json
+    filename: '{primary}.json'
+    view:
+      primary: name
+      fields:
+        - name
+        - type
+        - published
+      sort: order
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: type
+        label: Listing type
+        type: select
+        options:
+          values:
+            - organization
+            - executive
+        required: true
+      - name: role
+        label: Committee role
+        type: string
+      - name: organization
+        label: Organization
+        type: string
+      - name: url
+        label: Public website
+        type: string
+      - name: logo
+        label: Organization logo
+        type: image
+      - name: order
+        label: Display order
+        type: number
+        default: 0
+      - name: verified
+        label: Date membership was confirmed (YYYY-MM-DD)
+        type: string
+      - name: published
+        label: Publish this confirmed listing
+        type: boolean
+        default: false
+  - name: settings
+    label: Site settings & contact
+    type: file
+    path: src/data/settings.json
+    format: json
+    fields:
+      - name: name
+        label: Coalition name
+        type: string
+        required: true
+      - name: shortName
+        label: Short name
+        type: string
+        required: true
+      - name: description
+        label: Website description
+        type: text
+        required: true
+      - name: email
+        label: Public contact email
+        type: string
+      - name: newsletterUrl
+        label: Newsletter signup URL
+        type: string
+        description: Leave blank until a provider is chosen. No signup form will appear until this is set.
+      - name: storymapUrl
+        label: ArcGIS project storymap URL
+        type: string
+        required: true
+      - name: storymapEmbedEnabled
+        label: Show the embedded storymap
+        type: boolean
+        description: Enable only after verifying that a visitor can open the storymap without signing in.
+      - name: bikeMapUrl
+        label: Bike Streets full map URL
+        type: string
+        required: true
+      - name: bikeMapEmbedUrl
+        label: Bike Streets widget URL
+        type: string
+        required: true
+      - name: betterStreetsUrl
+        label: Better Streets projects URL
+        type: string
+        required: true
+      - name: certificationChecklistUrl
+        label: Event checklist URL
+        type: string
+      - name: certificationFlyerUrl
+        label: Event flyer URL
+        type: string
+      - name: certificationContactEmail
+        label: Event partnership email
+        type: string
+      - name: meetingSchedule
+        label: Usual meeting schedule
+        type: string
+        required: true
+      - name: meetingLocation
+        label: Usual meeting venue
+        type: string
+        required: true
+      - name: meetingAddress
+        label: Usual meeting address
+        type: string
+        required: true
+      - name: meetingNotice
+        label: Temporary meeting notice
+        type: text
+      - name: meetingNoticeExpires
+        label: Notice expires (ISO date with time zone)
+        type: string
+        required: true
+        description: The daily rebuild removes this notice after this time.

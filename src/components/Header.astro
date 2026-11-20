@@ -1,0 +1,40 @@
+---
+import { navGroups, url } from '../lib/site';
+const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
+---
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href={url('/')} aria-label="New Orleans Complete Streets Coalition home"><img src={url('/images/logo.png')} width="1000" height="248" alt="New Orleans Complete Streets Coalition" /></a>
+    <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden>Menu <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+    <nav id="site-navigation" class="main-nav" aria-label="Main navigation">
+      {navGroups.map(group => group.children ? <details class="nav-group">
+        <summary class:list={{ 'is-current': path.startsWith(group.href) }}>{group.label}<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" /></svg></summary>
+        <div class="nav-panel"><a href={url(group.href)} aria-current={path === group.href ? 'page' : undefined}>{group.label} overview</a>{group.children.map(child => <a href={url(child.href)} aria-current={path === child.href ? 'page' : undefined}>{child.label}</a>)}</div>
+      </details> : <a href={url(group.href)} aria-current={path === group.href ? 'page' : undefined}>{group.label}</a>)}
+      <a class="btn btn-small nav-action" href={url('/get-involved/')} aria-current={path === '/get-involved/' ? 'page' : undefined}>Get involved</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const nav = document.querySelector<HTMLElement>('#site-navigation');
+  if (button && nav) {
+    button.hidden = false;
+    document.documentElement.classList.add('nav-ready');
+    const close = () => { button.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); };
+    button.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') !== 'true'; button.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open); });
+    const groups = [...nav.querySelectorAll<HTMLDetailsElement>('details')];
+    groups.forEach(group => group.addEventListener('toggle', () => { if (group.open) groups.forEach(other => { if (other !== group) other.open = false; }); }));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        const active = groups.find(group => group.open && group.contains(document.activeElement));
+        groups.forEach(group => group.open = false);
+        if (active) active.querySelector('summary')?.focus();
+        else if (nav.classList.contains('is-open')) { close(); button.focus(); }
+      }
+    });
+    document.addEventListener('click', event => { if (!(event.target instanceof Node)) return; if (!nav.contains(event.target) && !button.contains(event.target)) { close(); groups.forEach(group => group.open = false); } });
+    nav.addEventListener('focusout', () => setTimeout(() => { groups.forEach(group => { if (!group.contains(document.activeElement)) group.open = false; }); }, 0));
+    matchMedia('(min-width: 1100px)').addEventListener('change', close);
+  }
+</script>

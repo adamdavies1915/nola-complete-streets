@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import { settings, url } from '../lib/site';
+import { nextEvent, formatDate, formatTime, buildTime } from '../lib/events.mjs';
+import Arrow from './Arrow.astro';
+const { compact = false } = Astro.props;
+const now = buildTime();
+const events = (await getCollection('events', ({ data }) => data.published)).map(e => ({...e.data, id:e.id}));
+const event = nextEvent(events, now);
+const notice = new Date(settings.meetingNoticeExpires) > now ? settings.meetingNotice : '';
+---
+<div class:list={['meeting', { 'meeting-compact': compact }]} id="meetings">
+  <div class="meeting-heading"><h2>Pull up a chair.</h2><p>Our general meetings are a place to share ideas, hear updates and get to work together.</p></div>
+  <div class="meeting-details" data-next-meeting={event?.id}>
+    {event ? <><h3><time datetime={event.start}>{formatDate(event.start)}</time></h3><p class="meeting-time">{formatTime(event.start)}–{formatTime(event.end)}</p><p>{event.location}<br />{event.address}</p></> : <><h3>Join a coalition meeting</h3><p>Contact us for the next confirmed meeting date.</p><p>{settings.meetingLocation}<br />{settings.meetingAddress}</p></>}
+    <p class="small">Usually {settings.meetingSchedule.toLowerCase()}.</p>
+    {notice && <p class="meeting-notice">{notice}</p>}
+    <div class="actions">{event && <a class="btn btn-outline" href={url(`/events/${event.id}.ics`)} download>Add to calendar <Arrow /></a>}<a class="text-link" href={compact ? url('/get-involved/#meetings') : `mailto:${settings.email}?subject=Coalition%20meeting`}>{compact ? 'Meeting details' : 'Ask about attending'} <Arrow /></a></div>
+  </div>
+</div>

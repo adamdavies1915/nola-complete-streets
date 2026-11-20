@@ -1,0 +1,11 @@
+---
+import { url } from '../lib/site';
+const chapters = [
+  {image:'greenway-crossing',alt:'People walking and riding bicycles through a marked crossing near mature oak trees.',title:'A crossing you can use.',text:'Visibility, space and connections matter at every intersection.'},
+  {image:'accessible-cycling',alt:'A person riding an adaptive cycle.',title:'Room for different ways of moving.',text:'Streets should work for people of different ages and abilities.'},
+  {image:'shared-path',alt:'A person cycling along a path separated from road traffic.',title:'A route that connects.',text:'Comfortable links make the whole trip possible, from one block to the next.'}
+];
+---
+<section class="section photo-story" data-moment="photo-chapters" aria-labelledby="street-examples">
+  <div class="wrap container mo-ph"><div class="mo-ph__head"><h2 id="street-examples">It’s the everyday details.</h2><p>These photographs from coalition materials show what better access can look like.</p></div><ol class="mo-ph__list">{chapters.map(c=><li class="mo-ph__ch"><figure class="mo-ph__pic"><img src={url(`/images/${c.image}.webp`)} alt={c.alt} width="1460" height="978" loading="lazy" /></figure><h3>{c.title}</h3><p>{c.text}</p></li>)}</ol></div>
+</section>

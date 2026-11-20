@@ -1,0 +1,36 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { settings, url } from '../lib/site';
+import '../styles/global.css';
+interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
+const { title, description = settings.description, image = '/images/greenway-crossing.webp', noindex = false } = Astro.props;
+const site = Astro.site || new URL('https://nolacompletestreets.org');
+const canonical = new URL(Astro.url.pathname, site);
+const fullTitle = `${title} | ${settings.shortName}`;
+---
+<!doctype html>
+<html lang="en" data-motion data-type="service">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title><meta name="description" content={description} /><link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#004892" /><meta name="site-kind" content="other" />
+    <meta property="og:type" content="website" /><meta property="og:site_name" content={settings.name} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={new URL(url(image), site)} /><meta property="og:image:alt" content="New Orleans Complete Streets Coalition — streets for everyone" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href={url('/images/favicon.png')} type="image/png" />
+    <link rel="preload" href={url('/fonts/barlow-condensed-bold.ttf')} as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href={url('/vendor/taste/motion/motion.css')} />
+    <link rel="stylesheet" href={url('/vendor/taste/moments/photo-chapters/moment.css')} />
+    <script is:inline>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main"><slot /></main>
+    <Footer />
+    <script is:inline type="module" src={url('/vendor/taste/motion/motion.js')}></script>
+    <script is:inline type="module" src={url('/vendor/taste/moments/moments.js')}></script>
+  </body>
+</html>
