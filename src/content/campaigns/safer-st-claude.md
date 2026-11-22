@@ -6,7 +6,7 @@
   "period": "Ongoing",
   "updated": "2026-11-18",
   "image": "/images/protected-bike-lane.webp",
-  "imageAlt": "A person riding in a separated bike lane, an example of safer space for bicycling.",
+  "imageAlt": "A person riding in a separated bike lane.",
   "order": 2
 }
 ---
@@ -24,9 +24,7 @@ The coalition supports the Safer St. Claude effort alongside neighborhood advoca
 - A clear public process, with updates residents can follow.
 
 ## Where the work stands
-An October 20, 2026 road safety audit brought agency and community perspectives to the corridor. The coalition is following the next steps for short-term improvements and longer-term planning. A study or audit is a step in the process; it is not a promise that a particular design has been approved.
-
-The photograph above illustrates separated space for bicycling; it does not depict a completed St. Claude project.
+An October 20, 2026 road safety audit brought agency and community perspectives to the corridor. The coalition is following the next steps for short-term improvements and longer-term planning.
 
 [Read Bike Easy's January 2026 campaign update](https://bikeeasy.org/advocacy/january-advocacy-round-up-calls-to-action/)
 

@@ -17,7 +17,7 @@
 
 **Historical guide · 2021 planning and construction updates**
 
-This page preserves the neighborhood context of Moving New Orleans Bikes. It describes what the coalition reported or proposed at the time; it is not a present-day construction tracker or a guarantee that a facility remains in place.
+In 2021, Moving New Orleans Bikes proposed these connections and street improvements.
 
 ## Corridors in the original guide
 
@@ -30,4 +30,4 @@ This page preserves the neighborhood context of Moving New Orleans Bikes. It des
 | Ursulines | Bike lanes between N. Claiborne and Hagan. |
 
 ## Planning a trip today
-Street layouts and project scopes can change. Use [Bike Streets](/resources/bike-routes/) for route planning and our [project directory](/resources/projects/) for agency project information.
+Use [Bike Streets](/resources/bike-routes/) for route planning and our [project directory](/resources/projects/) for agency project information.

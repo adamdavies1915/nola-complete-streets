@@ -24,7 +24,7 @@
 | Transit | C+ |
 | Other complete streets priorities | B− |
 
-These grades are the coalition's assessment in the **2025 report**. The underlying measures use different reporting years. They are a baseline for conversation and accountability, not a live rating of today's conditions.
+The **2025 report** grades the City’s progress using the reporting years listed below.
 
 [Download the full 2025 report card (PDF)](/downloads/nocsc-report-card-2025.pdf)
 

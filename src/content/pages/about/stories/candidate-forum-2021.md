@@ -15,10 +15,10 @@
 }
 ---
 
-**Originally published November 5, 2021 · Historical summary**
+**Originally published November 5, 2021**
 
 On October 19, 2021, the coalition hosted a City Council at-large candidate forum at the Broadside. Nellie Catzen of the Committee for a Better New Orleans moderated, with coalition members asking questions grounded in their organizations’ priorities.
 
 The discussion addressed safe, accessible transportation, infrastructure and the role of protected bikeways. It gave community members an opportunity to hear how candidates approached streets as public spaces serving people with different needs.
 
-This is a record of a past civic-education event, not an upcoming forum or a candidate endorsement. Today, the coalition’s [policy and accountability work](/campaigns/policy-and-accountability/) follows how public commitments translate into street improvements.
+Today, the coalition’s [policy and accountability work](/campaigns/policy-and-accountability/) follows how public commitments translate into street improvements.

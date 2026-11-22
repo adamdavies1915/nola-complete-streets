@@ -18,7 +18,7 @@ The coalition's Complete Streets Event Partnership helps organizers consider tra
 3. **Talk with the coalition.** Share your event plan and completed checklist. We can discuss access gaps, opportunities to collaborate and the next steps toward recognition.
 4. **Learn from the day.** Ask attendees how they arrived and what could make the trip easier next time.
 
-Submitting a checklist does not automatically certify an event. Recognition is coordinated with the coalition.
+Contact the coalition after completing the checklist to arrange recognition for your event.
 
 ## A first partnership
 The Urban Conservancy's *Cool People Who Know Things* event in July 2026 helped pilot this approach. One lesson was simple: consider routes and access early enough to include them in event communications.

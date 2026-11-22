@@ -22,4 +22,4 @@ The initiative aimed to provide donated bicycle racks to ten Black-owned busines
 ## A wider conversation
 A partnership webinar brought Black business leaders, City representatives and coalition members together to discuss how walking and bicycling relate to community health and local business.
 
-This is a historical campaign summary. The earlier rack application is no longer presented as an open offer. To discuss a new neighborhood or business partnership, [get involved with the coalition](/get-involved/).
+To discuss a new neighborhood or business partnership, [get involved with the coalition](/get-involved/).

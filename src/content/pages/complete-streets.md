@@ -39,7 +39,7 @@ We ask who is responsible, how decisions are made, what the public was told and 
 [Understand New Orleans' complete streets policy](/resources/policies/complete-streets-policy/)
 
 ## Learn from places that are doing the work
-The National Complete Streets Coalition documents policy and implementation lessons from communities across the country. NACTO's street design guides show how sidewalks, intersections, bikeways and transit can fit together. These are useful starting points for local conversations, not substitutes for neighborhood input.
+The National Complete Streets Coalition documents policy and implementation lessons from communities across the country. NACTO's street design guides show how sidewalks, intersections, bikeways and transit can fit together. Bring these examples into conversations about what your neighborhood needs.
 
 [Explore Smart Growth America's complete streets resources](https://smartgrowthamerica.org/program/national-complete-streets-coalition/) · [Read the NACTO Urban Street Design Guide](https://nacto.org/publication/urban-street-design-guide/)
 

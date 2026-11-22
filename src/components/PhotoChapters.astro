@@ -7,5 +7,5 @@ const chapters = [
 ];
 ---
 <section class="section photo-story" data-moment="photo-chapters" aria-labelledby="street-examples">
-  <div class="wrap container mo-ph"><div class="mo-ph__head"><h2 id="street-examples">It’s the everyday details.</h2><p>These photographs from coalition materials show what better access can look like.</p></div><ol class="mo-ph__list">{chapters.map(c=><li class="mo-ph__ch"><figure class="mo-ph__pic"><img src={url(`/images/${c.image}.webp`)} alt={c.alt} width="1460" height="978" loading="lazy" /></figure><h3>{c.title}</h3><p>{c.text}</p></li>)}</ol></div>
+  <div class="wrap container mo-ph"><div class="mo-ph__head"><h2 id="street-examples">It’s the everyday details.</h2><p>Safer crossings, room to ride and places to gather make everyday trips better.</p></div><ol class="mo-ph__list">{chapters.map(c=><li class="mo-ph__ch"><figure class="mo-ph__pic"><img src={url(`/images/${c.image}.webp`)} alt={c.alt} width="1460" height="978" loading="lazy" /></figure><h3>{c.title}</h3><p>{c.text}</p></li>)}</ol></div>
 </section>

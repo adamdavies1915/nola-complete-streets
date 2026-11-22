@@ -26,6 +26,6 @@
 }
 ---
 
-These selected stories preserve the people and ideas behind our work. They are dated historical summaries; past event invitations and petitions have been replaced with links to ways to participate today.
+Meet the neighbors, organizations and partners who helped put complete streets into practice.
 
 For the broader timeline, visit [our history](/about/history/). Explore [past campaigns](/campaigns/past/) for neighborhood projects and partnerships.

@@ -9,4 +9,4 @@
 }
 ---
 
-These projects are part of our history. Dates and descriptions reflect the campaign period, and old event invitations are not current calls to action.
+Explore the neighborhood projects and partnerships that helped shape our work.

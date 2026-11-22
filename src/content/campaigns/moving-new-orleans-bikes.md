@@ -16,10 +16,10 @@
 
 The coalition supported awareness and community engagement around Moving New Orleans Bikes, helping connect a citywide network conversation to the places people travel every day.
 
-This is a historical campaign summary. For current routes, use [Bike Streets](/resources/bike-routes/). For project information, visit our [city project directory](/resources/projects/).
+For current routes, use [Bike Streets](/resources/bike-routes/). For project information, visit our [city project directory](/resources/projects/).
 
 ## The neighborhood guides
-The original website explained proposed and then-underway improvements street by street. These condensed guides preserve that history, with clear separation from current route information.
+Explore the 2021 plans for safer connections, street by street.
 
 - [Downtown: CBD, French Quarter and Marigny](/campaigns/moving-new-orleans-bikes/downtown/)
 - [7th Ward, Tremé, Mid-City and Gentilly](/campaigns/moving-new-orleans-bikes/downriver/)

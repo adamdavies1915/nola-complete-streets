@@ -15,7 +15,7 @@
 }
 ---
 
-**Originally published December 9, 2021 · Historical summary**
+**Originally published December 9, 2021**
 
 Coalition members shared their work at the American Planning Association’s Louisiana conference in Lafayette in November 2021. The session brought together public agencies, researchers and advocates to discuss the bikeway network and the partnerships behind it.
 

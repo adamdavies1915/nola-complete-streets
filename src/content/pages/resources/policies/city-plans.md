@@ -9,4 +9,4 @@
 }
 ---
 
-Use these original sources to understand the goals behind local projects. A listed plan is a reference; its proposed projects are not all funded, designed or under construction.
+Explore the plans shaping transportation, climate action and public space in New Orleans. Follow the agency links for project updates.
