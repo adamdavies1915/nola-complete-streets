@@ -5,7 +5,7 @@ import { settings, url } from '../lib/site';
   <div class="wrap footer-main">
     <div class="footer-purpose"><a href={url('/')}><img src={url('/images/logo.png')} width="1000" height="248" alt="New Orleans Complete Streets Coalition" loading="lazy" /></a><p>Safe, sustainable and accessible streets.<br />No matter how you get around.</p></div>
     <div><h2>Explore</h2><a href={url('/about/')}>About the coalition</a><a href={url('/complete-streets/')}>Complete streets</a><a href={url('/campaigns/')}>Our campaigns</a><a href={url('/resources/')}>Resources</a></div>
-    <div><h2>Take part</h2><a href={url('/get-involved/#meetings')}>Join a meeting</a><a href={url('/get-involved/certified-events/')}>Host an event</a><a href={url('/resources/bike-routes/')}>Find a bike route</a>{settings.email && <a href={`mailto:${settings.email}`}>Contact the coalition</a>}</div>
+    <div><h2>Take part</h2><a href={url('/get-involved/')}>Get involved</a><a href={url('/get-involved/certified-events/')}>Host an event</a><a href={url('/resources/bike-routes/')}>Find a bike route</a>{settings.email && <a href={`mailto:${settings.email}`}>Contact the coalition</a>}</div>
   </div>
   <div class="wrap footer-bottom"><p>© {new Date().getFullYear()} New Orleans Complete Streets Coalition</p><p>Photographs from the coalition’s community materials.</p><a href={url('/privacy/')}>Privacy & accessibility</a></div>
 </footer>

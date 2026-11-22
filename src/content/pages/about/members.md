@@ -14,4 +14,4 @@ You do not need to be a transportation professional to take part. Your experienc
 ## Executive committee
 The executive committee keeps the coalition organized between general meetings, coordinating agendas, communications, records and resources. Ask about opportunities to help with communications or committee work at an upcoming meeting.
 
-[Meet with us](/get-involved/#meetings) or [contact the coalition](mailto:info@nolacompletestreets.org) to learn about membership and leadership opportunities.
+[Get involved](/get-involved/) or [contact the coalition](mailto:info@nolacompletestreets.org) to learn about membership and leadership opportunities.

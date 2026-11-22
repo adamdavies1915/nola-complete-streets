@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Arrow from '../components/Arrow.astro';
-import Meeting from '../components/Meeting.astro';
 import CampaignList from '../components/CampaignList.astro';
 import { home, url } from '../lib/site';
 ---
@@ -14,6 +13,5 @@ import { home, url } from '../lib/site';
   <section class="section policy-section" aria-labelledby="policy-title"><div class="wrap policy-grid"><h2 id="policy-title">{home.policyTitle}</h2><div><p class="large-copy">{home.policyIntro}</p><a class="text-link" href={url('/resources/policies/complete-streets-policy/')}>Understand the policy <Arrow /></a></div></div></section>
   <section class="section report-section" aria-labelledby="report-title"><div class="wrap"><div class="section-top"><div><h2 id="report-title">How’s the city doing?</h2><p>Our 2025 report card puts the commitments next to the evidence.</p></div><a class="text-link" href={url('/resources/report-card-2025/')}>Read the report card <Arrow /></a></div><div class="grades" aria-label="2025 Complete Streets Report Card grades"><div><span class="grade">C−</span><h3>Walking & bicycling</h3></div><div><span class="grade">C+</span><h3>Transit</h3></div><div><span class="grade">B−</span><h3>Other complete streets priorities</h3></div></div><p class="report-note">2025 coalition assessment. Individual measures use different source years; see the report for details.</p></div></section>
   <section class="section campaigns-section" aria-labelledby="campaigns-title"><div class="wrap"><div class="section-top"><div><h2 id="campaigns-title">Change starts on a block.</h2><p>Meet the campaigns moving our work forward.</p></div><a class="text-link" href={url('/campaigns/')}>All campaigns <Arrow /></a></div><CampaignList photos limit={2} /></div></section>
-  <section class="section community-section"><div class="wrap"><Meeting compact /></div></section>
   <section class="section invitation"><div class="wrap invitation-inner"><h2>{home.invitationTitle}</h2><div><p>{home.invitation}</p><a class="btn" href={url('/get-involved/')}>Get involved <Arrow /></a></div></div></section>
 </BaseLayout>
