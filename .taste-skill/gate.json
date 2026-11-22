@@ -1,0 +1,60 @@
+{
+ "start": "2026-11-20T22:27:37.630Z",
+ "round": 0,
+ "idle": 0,
+ "errors": 1,
+ "status": "error",
+ "history": [
+  {
+   "at": "2026-11-20T23:00:08.949Z",
+   "mode": "manual",
+   "status": "error",
+   "fails": 0,
+   "round": 0,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "dist/index.html",
+  "url": null,
+  "root": "dist",
+  "kind": "service",
+  "category": "New Orleans complete streets coalition",
+  "primary": "Take action",
+  "rounds": 3,
+  "start": "2026-11-20T22:27:37.630Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "fp": "8259e97b7ec71d4a",
+ "page": "dist/index.html",
+ "found": {
+  "fails": [],
+  "warns": [
+   {
+    "check": "copy-em-dash",
+    "msg": "3 em dashes in the body (budget 2)",
+    "fix": "use a comma, a colon, parentheses or a full stop where each is natural (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "(the copy)",
+    "exact": false
+   }
+  ],
+  "crashed": [
+   "consistency.mjs gave no report (exit 1: Error: no free port in 5200-5299)",
+   "check.mjs could not run (exit 2: (node:60654) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 listening listeners added to [Server]. MaxListeners is 10. Use emitter.)"
+  ],
+  "seconds": {
+   "consistency": 0,
+   "layout": 0
+  }
+ },
+ "open": [],
+ "waived": [],
+ "warnCount": 1,
+ "note": "consistency.mjs gave no report (exit 1: Error: no free port in 5200-5299); check.mjs could not run (exit 2: (node:60654) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 listening listeners added to [Server]. MaxListeners is 10. Use emitter.)",
+ "at": "2026-11-20T23:00:08.951Z"
+}

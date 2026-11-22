@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T23:06:09.090964Z",
+  "title": "Design System: New Orleans Complete Streets Coalition",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Coalition Blue",
+        "tonalRamp": [
+          "oklch(0.15 0.0420 255.48)",
+          "oklch(0.27 0.0891 255.48)",
+          "oklch(0.39 0.1252 255.48)",
+          "oklch(0.51 0.1371 255.48)",
+          "oklch(0.63 0.1206 255.48)",
+          "oklch(0.75 0.0816 255.48)",
+          "oklch(0.87 0.0343 255.48)",
+          "oklch(0.95 0.0085 255.48)"
+        ]
+      },
+      "blue-dark": {
+        "role": "primary",
+        "displayName": "Deep Blue",
+        "tonalRamp": [
+          "oklch(0.15 0.0341 255.04)",
+          "oklch(0.27 0.0725 255.04)",
+          "oklch(0.39 0.1018 255.04)",
+          "oklch(0.51 0.1114 255.04)",
+          "oklch(0.63 0.0981 255.04)",
+          "oklch(0.75 0.0663 255.04)",
+          "oklch(0.87 0.0279 255.04)",
+          "oklch(0.95 0.0069 255.04)"
+        ]
+      },
+      "yellow": {
+        "role": "secondary",
+        "displayName": "Coalition Yellow",
+        "tonalRamp": [
+          "oklch(0.15 0.0489 81.85)",
+          "oklch(0.27 0.1039 81.85)",
+          "oklch(0.39 0.1460 81.85)",
+          "oklch(0.51 0.1599 81.85)",
+          "oklch(0.63 0.1407 81.85)",
+          "oklch(0.75 0.0951 81.85)",
+          "oklch(0.87 0.0400 81.85)",
+          "oklch(0.95 0.0099 81.85)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(0.15 0.0020 106.52)",
+          "oklch(0.27 0.0043 106.52)",
+          "oklch(0.39 0.0060 106.52)",
+          "oklch(0.51 0.0066 106.52)",
+          "oklch(0.63 0.0058 106.52)",
+          "oklch(0.75 0.0039 106.52)",
+          "oklch(0.87 0.0017 106.52)",
+          "oklch(0.95 0.0004 106.52)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(0.15 0.0000 0.00)",
+          "oklch(0.27 0.0000 0.00)",
+          "oklch(0.39 0.0000 0.00)",
+          "oklch(0.51 0.0000 0.00)",
+          "oklch(0.63 0.0000 0.00)",
+          "oklch(0.75 0.0000 0.00)",
+          "oklch(0.87 0.0000 0.00)",
+          "oklch(0.95 0.0000 0.00)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "tonalRamp": [
+          "oklch(0.15 0.0126 246.59)",
+          "oklch(0.27 0.0267 246.59)",
+          "oklch(0.39 0.0376 246.59)",
+          "oklch(0.51 0.0411 246.59)",
+          "oklch(0.63 0.0362 246.59)",
+          "oklch(0.75 0.0245 246.59)",
+          "oklch(0.87 0.0103 246.59)",
+          "oklch(0.95 0.0025 246.59)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Slate",
+        "tonalRamp": [
+          "oklch(0.15 0.0091 244.86)",
+          "oklch(0.27 0.0194 244.86)",
+          "oklch(0.39 0.0272 244.86)",
+          "oklch(0.51 0.0298 244.86)",
+          "oklch(0.63 0.0262 244.86)",
+          "oklch(0.75 0.0177 244.86)",
+          "oklch(0.87 0.0075 244.86)",
+          "oklch(0.95 0.0018 244.86)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Coalition Grey",
+        "tonalRamp": [
+          "oklch(0.15 0.0008 228.79)",
+          "oklch(0.27 0.0017 228.79)",
+          "oklch(0.39 0.0024 228.79)",
+          "oklch(0.51 0.0026 228.79)",
+          "oklch(0.63 0.0023 228.79)",
+          "oklch(0.75 0.0015 228.79)",
+          "oklch(0.87 0.0007 228.79)",
+          "oklch(0.95 0.0002 228.79)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Slate",
+        "tonalRamp": [
+          "oklch(0.15 0.0071 241.57)",
+          "oklch(0.27 0.0151 241.57)",
+          "oklch(0.39 0.0213 241.57)",
+          "oklch(0.51 0.0233 241.57)",
+          "oklch(0.63 0.0205 241.57)",
+          "oklch(0.75 0.0139 241.57)",
+          "oklch(0.87 0.0058 241.57)",
+          "oklch(0.95 0.0014 241.57)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Condensed bold homepage headline; explicit local-brand typography exception."
+      },
+      "page-title": {
+        "displayName": "Page title",
+        "purpose": "Reading-page introduction with its own responsive title scale."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Major editorial sections; prose uses smaller explicit overrides."
+      },
+      "title": {
+        "displayName": "Record title",
+        "purpose": "Campaign and related record headings; resource and directory variants enlarge the base."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Long-form reading and explanations; 18px on phones, constrained to 69ch in articles."
+      },
+      "lead": {
+        "displayName": "Introduction",
+        "purpose": "Short introductory paragraphs; homepage and phone values are contextual overrides."
+      },
+      "label": {
+        "displayName": "Metadata",
+        "purpose": "Real dates, publishers, source notes and update context; not decorative eyebrows."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Semibold navigation and compact primary buttons."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Standard primary, outline and invitation actions."
+      },
+      "text-link": {
+        "displayName": "Text action",
+        "purpose": "Semibold underlined action with an inline arrow."
+      }
+    },
+    "shadows": [
+      {
+        "name": "navigation-panel",
+        "value": "0 10px 20px #00366f14",
+        "purpose": "Desktop dropdown separation only; removed when the navigation panel enters mobile document flow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Shared ease-out curve for button state and image-hover transitions."
+      },
+      {
+        "name": "m-ease-enter",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Hero photograph settling and existing photo-chapter transitions."
+      },
+      {
+        "name": "m-in",
+        "value": "150ms",
+        "purpose": "Hover entry timing."
+      },
+      {
+        "name": "m-out",
+        "value": "120ms",
+        "purpose": "Hover exit timing."
+      },
+      {
+        "name": "m-press",
+        "value": "90ms",
+        "purpose": "Button press timing."
+      },
+      {
+        "name": "m-image",
+        "value": "600ms",
+        "purpose": "Campaign photograph hover zoom to 1.03 inside its frame."
+      },
+      {
+        "name": "m-image-out",
+        "value": "400ms",
+        "purpose": "Campaign photograph settling back from hover."
+      },
+      {
+        "name": "hero-image-settle",
+        "value": "1100ms",
+        "purpose": "Photograph scale and clip settling during the one hero entrance."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-max",
+        "value": "359px"
+      },
+      {
+        "name": "phone-max",
+        "value": "639px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "820px"
+      },
+      {
+        "name": "mobile-navigation-max",
+        "value": "1099px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1190px"
+      },
+      {
+        "name": "wide-photo-min",
+        "value": "1441px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Yellow primary action on a light reading surface.",
+      "html": "<a class=\"ds-button-primary\" href=\"/get-involved/\">Get involved <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:15px 25px;min-height:54px;background:var(--yellow, #fdba12);color:var(--blue-dark, #00366f);border:2px solid transparent;border-radius:var(--radius, 4px);font:600 19px/1.35 var(--font, Barlow, sans-serif);text-decoration:none;transition:background-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),border-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),transform 90ms var(--ease, cubic-bezier(.2,.8,.2,1));}.ds-button-primary:hover{transition-duration:150ms,150ms,150ms,90ms;}.ds-button-primary:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-button-primary:active{transform:translateY(1px) scale(.985);}@media(hover:hover) and (pointer:fine){.ds-button-primary:hover{transform:translateY(-1px);}.ds-button-primary:active{transform:translateY(1px) scale(.985);}}@media(prefers-reduced-motion:reduce){.ds-button-primary:hover,.ds-button-primary:active{transform:none;}}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Outline button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action, including a meeting calendar download.",
+      "html": "<a class=\"ds-button-outline\" href=\"/events/2027-01-20-general-meeting.ics\" download>Add to calendar <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a>",
+      "css": ".ds-button-outline{display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:15px 25px;min-height:54px;background:transparent;color:var(--blue, #004892);border:2px solid var(--blue, #004892);border-radius:var(--radius, 4px);font:600 19px/1.35 var(--font, Barlow, sans-serif);text-decoration:none;transition:background-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),border-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),transform 90ms var(--ease, cubic-bezier(.2,.8,.2,1));}.ds-button-outline:hover{transition-duration:150ms,150ms,150ms,90ms;}.ds-button-outline:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-button-outline:active{transform:translateY(1px) scale(.985);}@media(hover:hover) and (pointer:fine){.ds-button-outline:hover{transform:translateY(-1px);}.ds-button-outline:active{transform:translateY(1px) scale(.985);}}@media(prefers-reduced-motion:reduce){.ds-button-outline:hover,.ds-button-outline:active{transform:none;}}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Blue invitation button",
+      "kind": "button",
+      "refersTo": "button-blue",
+      "description": "White-on-blue action used within the yellow invitation band.",
+      "html": "<a class=\"ds-button-blue\" href=\"/get-involved/\">Get involved <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a>",
+      "css": ".ds-button-blue{display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:15px 25px;min-height:54px;background:var(--blue, #004892);color:var(--white, #fff);border:2px solid transparent;border-radius:var(--radius, 4px);font:600 19px/1.35 var(--font, Barlow, sans-serif);text-decoration:none;transition:background-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),border-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),transform 90ms var(--ease, cubic-bezier(.2,.8,.2,1));}.ds-button-blue:hover{transition-duration:150ms,150ms,150ms,90ms;}.ds-button-blue:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-button-blue:active{transform:translateY(1px) scale(.985);}@media(hover:hover) and (pointer:fine){.ds-button-blue:hover{transform:translateY(-1px);}.ds-button-blue:active{transform:translateY(1px) scale(.985);}}@media(prefers-reduced-motion:reduce){.ds-button-blue:hover,.ds-button-blue:active{transform:none;}}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Small primary button",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "Compact primary action used in the main navigation.",
+      "html": "<a class=\"ds-button-small\" href=\"/get-involved/\">Get involved <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a>",
+      "css": ".ds-button-small{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:11px 18px;min-height:48px;background:var(--yellow, #fdba12);color:var(--blue-dark, #00366f);border:2px solid transparent;border-radius:var(--radius, 4px);font:600 17px/1.35 var(--font, Barlow, sans-serif);text-decoration:none;transition:background-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),border-color 120ms var(--ease, cubic-bezier(.2,.8,.2,1)),transform 90ms var(--ease, cubic-bezier(.2,.8,.2,1));}.ds-button-small:hover{transition-duration:150ms,150ms,150ms,90ms;}.ds-button-small:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-button-small:active{transform:translateY(1px) scale(.985);}@media(hover:hover) and (pointer:fine){.ds-button-small:hover{transform:translateY(-1px);}.ds-button-small:active{transform:translateY(1px) scale(.985);}}@media(prefers-reduced-motion:reduce){.ds-button-small:hover,.ds-button-small:active{transform:none;}}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Text action",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Underlined semibold link with a supporting inline arrow.",
+      "html": "<a class=\"ds-text-link\" href=\"/complete-streets/\">What is a complete street? <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;color:var(--blue, #004892);font:600 20px/1.4 var(--font, Barlow, sans-serif);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;}.ds-text-link:hover{text-decoration-thickness:2px;}.ds-text-link:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Navigation disclosure",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Native group disclosure shown in the in-flow mobile arrangement.",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Example navigation\"><details class=\"ds-nav-group\" open><summary>Resources <svg class=\"ds-chevron\" width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"m2 4 4 4 4-4\" /></svg></summary><div class=\"ds-nav-panel\"><a href=\"/resources/\" aria-current=\"page\">Resources overview</a><a href=\"/resources/research/\">Research & data</a><a href=\"/resources/policies/\">Policies & plans</a></div></details></nav>",
+      "css": ".ds-navigation{display:flex;flex-direction:column;gap:8px;background:var(--white, #fff);color:var(--blue, #004892);font:600 17px/1.35 var(--font, Barlow, sans-serif);}.ds-nav-group summary{display:flex;align-items:center;gap:8px;min-height:48px;list-style:none;cursor:pointer;}.ds-nav-group summary::-webkit-details-marker{display:none;}.ds-nav-group[open] .ds-chevron{rotate:180deg;}.ds-nav-panel{background:var(--white, #fff);border:1px solid var(--line, #d1d3d4);border-top:2px solid var(--yellow, #fdba12);padding:10px;margin-block:6px;}.ds-nav-panel a{display:block;padding:12px 14px;color:var(--blue, #004892);text-decoration:none;}.ds-nav-panel [aria-current=page]{text-decoration:underline;text-underline-offset:7px;}.ds-nav-panel a:hover,.ds-nav-panel a:focus-visible{background:var(--paper, #f7f7f2);}.ds-nav-group summary:focus-visible,.ds-nav-panel a:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}"
+    },
+    {
+      "name": "Campaign row",
+      "kind": "card",
+      "refersTo": "campaign-row",
+      "description": "An open editorial record with a real period, linked title and short explanation.",
+      "html": "<article class=\"ds-campaign\"><p class=\"ds-campaign-period\">2025–2026</p><h3><a href=\"/campaigns/daylighting/\">Let’s see each other. <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a></h3><p>Opening sightlines at neighborhood intersections so people can see and be seen.</p></article>",
+      "css": ".ds-campaign{padding:32px 0;border-top:1px solid var(--line, #d1d3d4);color:var(--text, #233749);font:400 20px/1.6 var(--font, Barlow, sans-serif);}.ds-campaign .ds-campaign-period{font-size:16px;line-height:1.55;color:var(--muted, #536371);margin:0 0 8px;}.ds-campaign h3{font:700 32px/1.05 var(--display, \"Barlow Condensed\", \"Arial Narrow\", sans-serif);margin:0 0 16px;color:var(--blue, #004892);}.ds-campaign h3 a{display:flex;align-items:center;justify-content:space-between;gap:16px;color:inherit;text-decoration:none;}.ds-campaign h3 a:hover{text-decoration:underline;text-underline-offset:6px;}.ds-campaign h3 a:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-campaign p:last-child{margin:0;max-width:60ch;}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Resource row",
+      "kind": "custom",
+      "refersTo": "resource-row",
+      "description": "Source-linked record with a narrow publisher and date column that stacks on tablets.",
+      "html": "<article class=\"ds-resource\"><div><h2><a href=\"https://bikeeasy.org/tips-guides/count-dat/\">Count Dat <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\" /></svg></a></h2><p>Walking and bicycling count data and research for the New Orleans region.</p></div><p class=\"ds-resource-meta\">Bike Easy / UNOTI</p></article>",
+      "css": ".ds-resource{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:64px;border-top:1px solid var(--line, #d1d3d4);padding:32px 0;color:var(--text, #233749);font:400 19px/1.6 var(--font, Barlow, sans-serif);}.ds-resource h2{font:700 36px/1.05 var(--display, \"Barlow Condensed\", \"Arial Narrow\", sans-serif);letter-spacing:-.01em;color:var(--blue, #004892);margin:0 0 16px;}.ds-resource h2 a{display:inline-flex;align-items:center;gap:18px;color:inherit;text-decoration:none;}.ds-resource h2 a:hover{text-decoration:underline;}.ds-resource h2 a:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}.ds-resource p{max-width:65ch;margin:0;}.ds-resource .ds-resource-meta{font-size:16px;color:var(--muted, #536371);}@media(max-width:820px){.ds-resource{grid-template-columns:1fr;gap:15px;}.ds-resource .ds-resource-meta{font-size:15px;}}@media(max-width:639px){.ds-resource{padding-block:28px;font-size:18px;}.ds-resource h2{font-size:33px;}}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    },
+    {
+      "name": "Report table",
+      "kind": "custom",
+      "refersTo": "report-table",
+      "description": "Semantic evidence table with a warm-paper heading and strong closing rule.",
+      "html": "<table class=\"ds-report-table\"><thead><tr><th scope=\"col\">Area</th><th scope=\"col\">2025 grade</th></tr></thead><tbody><tr><td>Walking & bicycling</td><td>C−</td></tr><tr><td>Transit</td><td>C+</td></tr><tr><td>Other complete streets priorities</td><td>B−</td></tr></tbody></table>",
+      "css": ".ds-report-table{width:100%;border-collapse:collapse;margin:24px 0 32px;text-align:left;color:var(--text, #233749);font:400 17px/1.6 var(--font, Barlow, sans-serif);}.ds-report-table th{background:var(--paper, #f7f7f2);font-weight:600;color:var(--blue, #004892);}.ds-report-table th,.ds-report-table td{padding:15px 16px;border-bottom:1px solid var(--line, #d1d3d4);vertical-align:top;}.ds-report-table tbody tr:last-child td{border-bottom:2px solid var(--blue, #004892);}@media(max-width:639px){.ds-report-table{font-size:14px;table-layout:fixed;}.ds-report-table th,.ds-report-table td{padding:12px 8px;overflow-wrap:break-word;}}"
+    },
+    {
+      "name": "Editorial callout",
+      "kind": "card",
+      "refersTo": "callout",
+      "description": "Warm-paper callout marked by a yellow left edge, with an ordinary linked action.",
+      "html": "<aside class=\"ds-callout\"><h2>Start planning your event.</h2><p>Talk with the coalition about a Complete Streets event partnership.</p><a class=\"ds-callout-action\" href=\"/get-involved/certified-events/\">Host an event <svg class=\"ds-arrow\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\" /></svg></a></aside>",
+      "css": ".ds-callout{margin-top:48px;padding:40px;background:var(--paper, #f7f7f2);border-left:5px solid var(--yellow, #fdba12);color:var(--text, #233749);font:400 20px/1.6 var(--font, Barlow, sans-serif);}.ds-callout h2{font:700 40px/1.05 var(--display, \"Barlow Condensed\", \"Arial Narrow\", sans-serif);letter-spacing:-.01em;color:var(--blue, #004892);margin:0 0 24px;}.ds-callout p{max-width:60ch;margin:0 0 20px;}.ds-callout-action{display:inline-flex;align-items:center;gap:12px;min-height:44px;color:var(--blue, #004892);font-weight:600;line-height:1.4;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;}.ds-callout-action:hover{text-decoration-thickness:2px;}.ds-callout-action:focus-visible{outline:3px solid var(--blue, #004892);outline-offset:5px;}@media(max-width:639px){.ds-callout{padding:28px 22px;font-size:18px;}.ds-callout h2{font-size:34px;}}.ds-arrow{flex-shrink:0;vertical-align:middle;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Light daytime streetscape",
+    "overview": "The coalition's original identity is the visual authority: its supplied logo, strong blue headings, yellow actions and grey dividers carry through a bright public website. Locally hosted Barlow Condensed gives headlines the sturdy character of the mark; full-width Barlow gives explanations, policies and evidence room to be read. This pairing is an explicit original-brand exception to generic font restrictions, not a license to substitute a different display face.\n\nReal photographs from coalition materials establish place and show different ways of moving. The interface uses open editorial sections, plain language and visible source information. Short invitation pages can be spacious; policy, research and archive pages follow their content's natural height. The shared system is the palette, typography, alignment, imagery and interaction behavior; the homepage's particular sequence is recorded separately in its surface brief.\n\nDocumentation basis: the implemented Astro components, pages, global stylesheet and loaded motion assets. This is a code scan, not visual signoff. Browser captures and computed-style sampling were unavailable because the sandbox rejected localhost listeners with `EPERM`; responsive appearance and final visual quality still require browser verification.",
+    "keyCharacteristics": [
+      "Original coalition blue, yellow and grey on white and warm paper.",
+      "Bold condensed headlines with readable full-width body text.",
+      "Actual community photography with a clear connection to the content.",
+      "Open rows, restrained dividers and content-led reading layouts.",
+      "Visible keyboard focus, native disclosure controls and reduced-motion fallbacks."
+    ],
+    "rules": [
+      {
+        "name": "The Original Identity Rule",
+        "body": "Keep the coalition's supplied logo and blue, yellow and grey identity; derive new surfaces from their existing roles.",
+        "section": "colors"
+      },
+      {
+        "name": "The Brand Type Rule",
+        "body": "Use the supplied local Barlow families and their actual weights; preserve this explicit brand decision on future surfaces.",
+        "section": "typography"
+      },
+      {
+        "name": "The Reading Length Rule",
+        "body": "Let policy, research and archive pages grow with their content; keep paragraphs, source lists and tables within readable measures.",
+        "section": "layout"
+      },
+      {
+        "name": "The Open Surface Rule",
+        "body": "Use alignment, spacing and dividers for editorial records; reserve elevated panels for controls that actually overlap the page.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the supplied logo, original palette and local Barlow font pairing.",
+      "**Do** use real coalition photographs and identify a design concept as a concept.",
+      "**Do** keep body copy readable, record titles clear and source context close to the claim.",
+      "**Do** let reading pages follow their content's natural height.",
+      "**Do** use visible focus, native disclosure controls and explicit external links for embedded maps.",
+      "**Do** retain reduced-motion and no-script access to the complete content."
+    ],
+    "donts": [
+      "**Don't** replace the approved brand typography with a generic display or system-font identity.",
+      "**Don't** introduce decorative pre-heading labels, invented statistics or unsupported claims.",
+      "**Don't** put long reading copy directly over a busy photograph; use a solid surface for image notes.",
+      "**Don't** turn editorial lists and report measures into floating card grids.",
+      "**Don't** make a surface's particular narrative sequence a mandatory template for every page.",
+      "**Don't** describe code inspection as completed browser or visual verification."
+    ]
+  }
+}

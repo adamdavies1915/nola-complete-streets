@@ -8,7 +8,7 @@ The site is published through GitHub Pages for review; the coalition’s product
 - [ ] Confirm January 20, 2027 meeting venue, time and public attendance instructions. December's cancellation reflects the November 18 meeting notes.
 - [ ] Select the newsletter provider and enter/test its signup URL.
 - [ ] Verify the event checklist link, recognition process and public contact; supply the final flyer.
-- [ ] Verify that the project storymap opens while signed out. Enable the embed after verification. It remains the primary map link; Better Streets is separate.
+- [x] Confirmed the ArcGIS project storymap is public and enabled its embed. The direct map link remains available; Better Streets is separate.
 - [ ] Open Bike Streets, Better Streets, external dashboards and all agency links on the staging site.
 - [ ] Confirm rights and attribution for photos extracted from historical coalition handouts.
 - [ ] Connect Pages CMS to the destination repository, invite editors and complete the staging edit/upload/draft/publish test.

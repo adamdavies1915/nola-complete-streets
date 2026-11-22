@@ -5,7 +5,7 @@
   "email": "info@nolacompletestreets.org",
   "newsletterUrl": "",
   "storymapUrl": "https://storymaps.arcgis.com/stories/741cd6eb56ed425080d8b4ed7eb5997d",
-  "storymapEmbedEnabled": false,
+  "storymapEmbedEnabled": true,
   "bikeMapUrl": "https://bikestreets.com/la/new-orleans/",
   "bikeMapEmbedUrl": "https://bikestreets.com/widget/la/new-orleans/",
   "betterStreetsUrl": "https://betterstreets.cargobay.dev/projects",
