@@ -1,6 +1,6 @@
 # Before public launch
 
-The implementation is ready for repository setup and a staging review. These items are deliberately separate from the completed static build.
+The site is published through GitHub Pages for review; the coalition’s production domain has not been moved. These items are deliberately separate from the completed static build.
 
 - [ ] Confirm the public contact mailbox `info@nolacompletestreets.org` receives mail.
 - [ ] Confirm executive names/roles and member organization listings, then publish approved entries. All initial roster entries remain drafts.
@@ -13,7 +13,7 @@ The implementation is ready for repository setup and a staging review. These ite
 - [ ] Confirm rights and attribution for photos extracted from historical coalition handouts.
 - [ ] Connect Pages CMS to the destination repository, invite editors and complete the staging edit/upload/draft/publish test.
 - [ ] Run the responsive, keyboard, reduced-motion and assistive-technology checks in VERIFICATION.md. Browser verification was blocked in the build workspace.
-- [ ] Review old WordPress URLs and media links against a full WordPress export or sitemap. Fifteen known legacy paths are redirected; historical posts and all old media URLs have not been exhaustively migrated.
+- [ ] Review old WordPress URLs and media links against a full WordPress export or sitemap. Twenty-two known legacy paths are redirected; historical posts and all old media URLs have not been exhaustively migrated.
 - [ ] Approve the staging site, configure the custom domain, update DNS and verify HTTPS. No production domain changes have been made.
 
 ## Content decisions already reflected

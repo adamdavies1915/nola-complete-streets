@@ -1,6 +1,6 @@
 # New Orleans Complete Streets Coalition
 
-A static Astro rebuild of nolacompletestreets.org. The site includes 27 content pages, a custom 404, 15 legacy redirects, a Bike Streets embed, project storymap and Better Streets links, downloadable reports, calendar downloads and browser editing configuration for Pages CMS.
+A static Astro rebuild of nolacompletestreets.org. The site includes 35 content pages, a custom 404, 22 legacy redirects, a Bike Streets embed, project storymap and Better Streets links, downloadable reports, calendar downloads and browser editing configuration for Pages CMS.
 
 ## Run it
 
@@ -20,10 +20,17 @@ npm run preview
 
 The output in `dist/` is entirely static. There is no database or production Node server. Fonts, photographs, PDFs and the small navigation/motion scripts are served locally. Only the route-map page loads the Bike Streets widget.
 
+## Published site
+
+- Site: https://adamdavies.dev/nola-complete-streets/
+- Public repository: https://github.com/adamdavies1915/nola-complete-streets
+- Hosting: GitHub Pages via GitHub Actions. The domain is inherited from the account’s Pages site.
+- Repository variables: `ENABLE_GITHUB_PAGES=true`, `SITE_URL=https://adamdavies.dev`, `BASE_PATH=/nola-complete-streets/`.
+
 ## Deploy to GitHub Pages
 
 1. Put this project in the destination GitHub repository on its `main` branch.
-2. In **Settings → Pages**, select **GitHub Actions** as the source.
+2. In **Settings → Pages**, select **GitHub Actions** as the source and set repository variable `ENABLE_GITHUB_PAGES=true`.
 3. For a project URL such as `https://owner.github.io/repository/`, the included workflow derives the origin and repository subdirectory automatically.
 4. For a user/organization site (`owner.github.io`), set repository variable `BASE_PATH` to `/`.
 5. For the eventual custom domain, set `SITE_URL=https://nolacompletestreets.org`, `BASE_PATH=/` and `CUSTOM_DOMAIN=nolacompletestreets.org`. Only set the domain and update DNS when the launch is approved.
